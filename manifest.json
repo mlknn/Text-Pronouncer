@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Text Pronouncer",
+  "version": "1.0",
+  "description": "Pronounces text when you triple-click it",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
